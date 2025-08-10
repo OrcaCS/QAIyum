@@ -32,7 +32,7 @@ class Main {
         while (true) {
             String input = keyboard.nextLine().toLowerCase().trim();
             if (input.equals("two banana")) {
-                System.out.println("One pound! \n");
+                System.out.println("One pound!!1! \n");
                 break;
             }
         }

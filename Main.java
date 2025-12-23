@@ -4,38 +4,42 @@ class Main {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String input;
+        final double ONE_BANANA_CHANCE = 0.19; // random from .0 to .99; 0.49 is 50% chance
+        final double TRANSFORMERS_CHANCE = 0.19;
+        final double FIFTY_FIRST_STATE_CHANCE = 0.39;
+        final double INFLATION_CHANCE = 0.59;
+        final double POPULATION_TRIANGLE_CHANCE = 0.70;
+        final double SLEEP_CHANCE = 0.75;
+        final double BRAINWASHING_CHANCE = 0.80;
         
         System.out.println("Hello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
         
         while (true) {
         input = keyboard.nextLine().toLowerCase().trim();
+        double random = Math.random();
         
-            if (input.equals("one banana")) {
+            if (input.contains("one banana")) {
                 twoBanana();
             } else if (input.contains("selfie")) {
                 System.out.println("Sending selfie...");
                 selfie();
             } else {
-                if (Math.random() <= 0.19) { // random from .0 to .99
-                oneBanana(); // 0.49 is 50% chance
+                if (random <= ONE_BANANA_CHANCE) {
+                    oneBanana();
                 } else {
-                    if (Math.random() <= 0.19) {
-                    System.out.println("Chooose between pokemon andd transformers.");
-                        input = keyboard.nextLine().toLowerCase().trim();
-                        if (input.contains("pokemon") & !input.contains("transformers")) {
-                            System.out.println("This is what's wrong with society.");
-                        } else {
-                            System.out.println("I hate pokemon.");
-                        }
-                    } else if ((Math.random() > 0.19) & (Math.random() <= 0.39)) {
+                    random = Math.random();
+                    
+                    if (random <= TRANSFORMERS_CHANCE) {
+                        transformers();
+                    } else if ((random > TRANSFORMERS_CHANCE) & (random <= FIFTY_FIRST_STATE_CHANCE)) {
                         System.out.println("Should Canada be the 51st state?");
-                    } else if ((Math.random() > 0.39) & (Math.random() <= 0.54)) {
+                    } else if ((random > FIFTY_FIRST_STATE_CHANCE) & (random <= INFLATION_CHANCE)) {
                         System.out.println("What do you think about the current state of inflation due to excessive money printing?");
-                    } else if ((Math.random() > 0.54) & (Math.random() <= 0.70)) {
+                    } else if ((random > INFLATION_CHANCE) & (random <= POPULATION_TRIANGLE_CHANCE)) {
                         System.out.println("Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
-                    } else if ((Math.random() > 0.70) & (Math.random() <= 0.76)) {
+                    } else if ((random > POPULATION_TRIANGLE_CHANCE) & (random <= SLEEP_CHANCE)) {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
-                    } else if ((Math.random() > 0.76) & (Math.random() <= 0.80)) {
+                    } else if ((random > SLEEP_CHANCE) & (random <= BRAINWASHING_CHANCE)) {
                         System.out.println("The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
@@ -52,28 +56,44 @@ class Main {
     public static void oneBanana() {
         Scanner keyboard = new Scanner(System.in);
         
-        System.out.println("One banana.");
+        System.out.println("\nOne banana.");
         
         while (true) {
             String input = keyboard.nextLine().toLowerCase().trim();
-            if (input.equals("two banana") || input.equals("two banana.") || input.equals("two banana!")) {
-                System.out.println("One pound!!1! \n");
+            if (input.contains("two banana") || input.contains("two banana.") || input.contains("two banana!")) {
+                System.out.println("One pound!!1!\n");
                 break;
             } else {
-                System.out.println("One banana.");
+                System.out.println("One banana. I won't sttop until you anwser me properlly. I am goign to keep bothernig u with this.");
             }
         }
     }
     
     public static void selfie() {
-        if (Math.random() <= 0.24) {
+        double random = Math.random();
+        
+        if (random <= 0.24) {
             System.out.println("test1\n");
-        } else if ((Math.random() > 0.24) & (Math.random() <= 0.49)) {
+            // add "open qayumselfie1.png"
+        } else if ((random > 0.24) & (random <= 0.49)) {
             System.out.println("test2\n");
-        } else if ((Math.random() > 0.49) & (Math.random() <= 0.74)) {
+        } else if ((random > 0.49) & (random <= 0.74)) {
             System.out.println("test3\n");
         } else {
             System.out.println("test4\n");
+        }
+    }
+    
+    public static void transformers() {
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("Chooose between pokemon andd transformers.");
+        String input = keyboard.nextLine().toLowerCase().trim();
+        
+        if (input.contains("pokemon") & !input.contains("transformers")) {
+            System.out.println("This iis what's wrong with society.");
+        } else {
+            System.out.println("I hate pokemon. Transformers are better.");
         }
     }
 }

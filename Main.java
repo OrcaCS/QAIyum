@@ -71,7 +71,7 @@ public class Main {
     
     public static void selfie() {
         SendSelfie sendSelfie = new SendSelfie();
-        sendSelfie.displayMessage();
+        sendSelfie.main();
     }
     
     public static void transformers() {

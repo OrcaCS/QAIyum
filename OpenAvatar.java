@@ -5,7 +5,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class ImageViewer {
+public class OpenAvatar {
     public static void main(String[] args) {
         String imagePath = "qaiyumavatar.jpg";
         BufferedImage img = null;

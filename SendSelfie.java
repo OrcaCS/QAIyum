@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class SendSelfie {
     public static void main(String[] args) {
-        String imagePath
+        String imagePath;
         double random = Math.random();
         
         if (random <=  0.24) {

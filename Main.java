@@ -12,7 +12,8 @@ public class Main {
         final double SLEEP_CHANCE = 0.75;
         final double BRAINWASHING_CHANCE = 0.80;
         
-        System.out.println("Hello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
+        avatar();
+        System.out.println("\nHello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
         
         while (true) {
         input = keyboard.nextLine().toLowerCase().trim();
@@ -68,10 +69,15 @@ public class Main {
             }
         }
     }
+
+    public static void avatar() {
+        OpenAvatar openAvatar = new OpenAvatar();
+        openAvatar.main();
+    }
     
     public static void selfie() {
         SendSelfie sendSelfie = new SendSelfie();
-        sendSelfie.main();
+        sendSelfie.main(null);
     }
     
     public static void transformers() {

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class OpenAvatar {
     public static void main(String[] args) {
-        String imagePath = "src/qaiyumavatar.jpg";
+        String imagePath = "src/qaiyumavatar.png";
         BufferedImage img = null;
 
         try {

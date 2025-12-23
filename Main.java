@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String input;
@@ -31,15 +31,15 @@ class Main {
                     
                     if (random <= TRANSFORMERS_CHANCE) {
                         transformers();
-                    } else if ((random > TRANSFORMERS_CHANCE) & (random <= FIFTY_FIRST_STATE_CHANCE)) {
+                    } else if ((random > TRANSFORMERS_CHANCE) && (random <= FIFTY_FIRST_STATE_CHANCE)) {
                         System.out.println("Should Canada be the 51st state?");
-                    } else if ((random > FIFTY_FIRST_STATE_CHANCE) & (random <= INFLATION_CHANCE)) {
+                    } else if ((random > FIFTY_FIRST_STATE_CHANCE) && (random <= INFLATION_CHANCE)) {
                         System.out.println("What do you think about the current state of inflation due to excessive money printing?");
-                    } else if ((random > INFLATION_CHANCE) & (random <= POPULATION_TRIANGLE_CHANCE)) {
+                    } else if ((random > INFLATION_CHANCE) && (random <= POPULATION_TRIANGLE_CHANCE)) {
                         System.out.println("Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
-                    } else if ((random > POPULATION_TRIANGLE_CHANCE) & (random <= SLEEP_CHANCE)) {
+                    } else if ((random > POPULATION_TRIANGLE_CHANCE) && (random <= SLEEP_CHANCE)) {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
-                    } else if ((random > SLEEP_CHANCE) & (random <= BRAINWASHING_CHANCE)) {
+                    } else if ((random > SLEEP_CHANCE) && (random <= BRAINWASHING_CHANCE)) {
                         System.out.println("The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
@@ -70,18 +70,8 @@ class Main {
     }
     
     public static void selfie() {
-        double random = Math.random();
-        
-        if (random <= 0.24) {
-            System.out.println("test1\n");
-            // add "open qayumselfie1.png"
-        } else if ((random > 0.24) & (random <= 0.49)) {
-            System.out.println("test2\n");
-        } else if ((random > 0.49) & (random <= 0.74)) {
-            System.out.println("test3\n");
-        } else {
-            System.out.println("test4\n");
-        }
+        SendSelfie sendSelfie = new SendSelfie();
+        sendSelfie.displayMessage();
     }
     
     public static void transformers() {
@@ -90,7 +80,7 @@ class Main {
         System.out.println("Chooose between pokemon andd transformers.");
         String input = keyboard.nextLine().toLowerCase().trim();
         
-        if (input.contains("pokemon") & !input.contains("transformers")) {
+        if (input.contains("pokemon") && !input.contains("transformers")) {
             System.out.println("This iis what's wrong with society.");
         } else {
             System.out.println("I hate pokemon. Transformers are better.");

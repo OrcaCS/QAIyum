@@ -10,13 +10,13 @@ public class SendSelfie {
         double random = Math.random();
 
         if (random <= 0.24) {
-            imagePath = "qaiyumselfie1.png";
+            imagePath = "src/qaiyumselfie1.png";
         } else if ((random > 0.24) && (random <= 0.49)) {
-            imagePath = "qaiyumselfie2.png";
+            imagePath = "src/qaiyumselfie2.png";
         } else if ((random > 0.49) && (random <= 0.74)) {
-            imagePath = "qaiyumselfie3.png";
+            imagePath = "src/qaiyumselfie3.png";
         } else {
-            imagePath = "qaiyumselfie4.png";
+            imagePath = "src/qaiyumselfie4.png";
         }
 
         BufferedImage img = null;

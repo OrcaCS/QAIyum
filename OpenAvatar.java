@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -13,7 +12,7 @@ public class OpenAvatar {
         try {
             img = ImageIO.read(new File(imagePath));
         } catch (IOException e) {
-            System.err.println("\nCould not open avatar. Wow! Looks like your device is so crappy that you can't even see me.");
+            System.err.println("\nCould not open avatar. Wow! Looks like your device is so crappy that you can't even see me. What are you chatting with me on, a potato??");
             return;
         }
 

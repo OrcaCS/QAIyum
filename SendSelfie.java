@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -25,7 +24,7 @@ public class SendSelfie {
         try {
             img = ImageIO.read(new File(imagePath));
         } catch (IOException e) {
-            System.err.println("Sorry, your crappy device can't receive images. And I'm also busy right now.");
+            System.err.println("Sorry, your crappy potato device can't receive images. And I'm also busy right now.");
             return;
         }
 

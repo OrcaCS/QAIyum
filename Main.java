@@ -14,6 +14,7 @@ class Main {
                 twoBanana();
             } else if (input.contains("selfie")) {
                 System.out.println("Sending selfie...");
+                selfie();
             } else {
                 if (Math.random() <= 0.19) { // random from .0 to .99
                 oneBanana(); // 0.49 is 50% chance
@@ -26,15 +27,15 @@ class Main {
                         } else {
                             System.out.println("I hate pokemon.");
                         }
-                    } else if ((Math.random() > 0.19 ) & (Math.random() <= 0.39 )) {
+                    } else if ((Math.random() > 0.19) & (Math.random() <= 0.39)) {
                         System.out.println("Should Canada be the 51st state?");
-                    } else if ((Math.random() > 0.39 ) & (Math.random() <= 0.54 )) {
+                    } else if ((Math.random() > 0.39) & (Math.random() <= 0.54)) {
                         System.out.println("What do you think about the current state of inflation due to excessive money printing?");
-                    } else if ((Math.random() > 0.54 ) & (Math.random() <= 0.70 )) {
+                    } else if ((Math.random() > 0.54) & (Math.random() <= 0.70)) {
                         System.out.println("Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
-                    } else if ((Math.random() > 0.70 ) & (Math.random() <= 0.76 )) {
+                    } else if ((Math.random() > 0.70) & (Math.random() <= 0.76)) {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
-                    } else if ((Math.random() > 0.76 ) & (Math.random() <= 0.80 )) {
+                    } else if ((Math.random() > 0.76) & (Math.random() <= 0.80)) {
                         System.out.println("The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
@@ -61,6 +62,18 @@ class Main {
             } else {
                 System.out.println("One banana.");
             }
+        }
+    }
+    
+    public static void selfie() {
+        if (Math.random() <= 0.24) {
+            System.out.println("test1\n");
+        } else if ((Math.random() > 0.24) & (Math.random() <= 0.49)) {
+            System.out.println("test2\n");
+        } else if ((Math.random() > 0.49) & (Math.random() <= 0.74)) {
+            System.out.println("test3\n");
+        } else {
+            System.out.println("test4\n");
         }
     }
 }

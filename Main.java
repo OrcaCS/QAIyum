@@ -72,7 +72,7 @@ public class Main {
 
     public static void avatar() {
         OpenAvatar openAvatar = new OpenAvatar();
-        openAvatar.main();
+        openAvatar.main(null);
     }
     
     public static void selfie() {

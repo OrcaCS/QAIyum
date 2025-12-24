@@ -5,12 +5,15 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         String input;
         final double ONE_BANANA_CHANCE = 0.19; // random from .0 to .99; 0.49 is 50% chance
-        final double TRANSFORMERS_CHANCE = 0.19;
-        final double FIFTY_FIRST_STATE_CHANCE = 0.39;
+        final double TRANSFORMERS_CHANCE = 0.19; // i know this is a terrible number system, but it works!!
+        final double FIFTY_FIRST_STATE_CHANCE = 0.39; // and you can tell when it hits max (0.99) :)
         final double INFLATION_CHANCE = 0.59;
-        final double POPULATION_TRIANGLE_CHANCE = 0.70;
-        final double SLEEP_CHANCE = 0.75;
-        final double BRAINWASHING_CHANCE = 0.80;
+        final double POPULATION_TRIANGLE_CHANCE = 0.69;
+        final double SLEEP_CHANCE = 0.74;
+        final double BRAINWASHING_CHANCE = 0.79;
+        final double FORUMS_CHANCE = 0.84;
+        final double POWER_CHANCE = 0.90;
+        final double BUS_CHANCE = 0.94;
         
         avatar();
         System.out.println("\nHello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
@@ -42,6 +45,12 @@ public class Main {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
                     } else if ((random > SLEEP_CHANCE) && (random <= BRAINWASHING_CHANCE)) {
                         System.out.println("The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
+                    } else if ((random > BRAINWASHING_CHANCE) && (random <= FORUMS_CHANCE)) {
+                        System.out.println("I spennd my time on online forums where poeple buy guns and stuff!!");
+                    } else if ((random > FORUMS_CHANCE) && (random <= POWER_CHANCE)) {
+                        System.out.println("I love power!! Being able to lock studentz comupters feelz awwsome :D");
+                    } else if ((random > POWER_CHANCE) && (random <= BUS_CHANCE)) {
+                        System.out.println("If u code on your phone on da bus, you can getz boyfriend or girlfried! Bcuz they will think u soooo cool!!!");
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
                     }

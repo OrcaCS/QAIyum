@@ -28,7 +28,7 @@ public class SendSelfie {
             return;
         }
 
-        JFrame frame = new JFrame("Image Viewer");
+        JFrame frame = new JFrame("QAIyum Selfie");
         ImageIcon icon = new ImageIcon(img);
         JLabel label = new JLabel(icon);
 

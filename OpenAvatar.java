@@ -17,7 +17,7 @@ public class OpenAvatar {
             return;
         }
 
-        JFrame frame = new JFrame("Image Viewer");
+        JFrame frame = new JFrame("QAIyum Avatar");
         ImageIcon icon = new ImageIcon(img);
         JLabel label = new JLabel(icon);
 

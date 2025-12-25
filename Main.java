@@ -14,6 +14,7 @@ public class Main {
         final double FORUMS_CHANCE = 0.84;
         final double POWER_CHANCE = 0.90;
         final double BUS_CHANCE = 0.94;
+        final double SOCIETY_CHANCE = 0.96;
         
         avatar();
         System.out.println("\nHello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
@@ -51,6 +52,8 @@ public class Main {
                         System.out.println("I love power!! Being able to lock studentz comupters feelz awwsome :D");
                     } else if ((random > POWER_CHANCE) && (random <= BUS_CHANCE)) {
                         System.out.println("If u code on your phone on da bus, you can getz boyfriend or girlfried! Bcuz they will think u soooo cool!!!");
+                    } else if ((random > BUS_CHANCE) && (random <= SOCIETY_CHANCE)) {
+                        society();
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
                     }
@@ -93,12 +96,27 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         
         System.out.println("Chooose between pokemon andd transformers.");
+        
         String input = keyboard.nextLine().toLowerCase().trim();
         
         if (input.contains("pokemon") && !input.contains("transformers")) {
             System.out.println("This iis what's wrong with society.");
         } else {
             System.out.println("I hate pokemon. Transformers are better.");
+        }
+    }
+
+    public static void society() {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("What is at the core of a functioning society?!?");
+        
+        String input = keyboard.nextLine().toLowerCase().trim();
+
+        if (input.contains("violence")) {
+            System.out.println("Yus, VIOLENCE!!!1!");
+        } else {
+            System.out.println("NO! IT'Z VIOLENCE!!1!1!1!1!!");
         }
     }
 }

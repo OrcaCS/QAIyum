@@ -15,14 +15,14 @@ public class Main {
         final double POWER_CHANCE = 0.90;
         final double BUS_CHANCE = 0.94;
         final double SOCIETY_CHANCE = 0.96;
-        
+
         avatar();
         System.out.println("\nHello! I'm QAIyum, a robot version of Mr. Qayum. I amm realy goood aat speling.");
-        
+
         while (true) {
-        input = keyboard.nextLine().toLowerCase().trim();
-        double random = Math.random();
-        
+            input = keyboard.nextLine().toLowerCase().trim();
+            double random = Math.random();
+
             if (input.contains("one banana")) {
                 twoBanana();
             } else if (input.contains("selfie")) {
@@ -33,25 +33,29 @@ public class Main {
                     oneBanana();
                 } else {
                     random = Math.random();
-                    
+
                     if (random <= TRANSFORMERS_CHANCE) {
                         transformers();
                     } else if ((random > TRANSFORMERS_CHANCE) && (random <= FIFTY_FIRST_STATE_CHANCE)) {
                         System.out.println("Should Canada be the 51st state?");
                     } else if ((random > FIFTY_FIRST_STATE_CHANCE) && (random <= INFLATION_CHANCE)) {
-                        System.out.println("What do you think about the current state of inflation due to excessive money printing?");
+                        System.out.println(
+                                "What do you think about the current state of inflation due to excessive money printing?");
                     } else if ((random > INFLATION_CHANCE) && (random <= POPULATION_TRIANGLE_CHANCE)) {
-                        System.out.println("Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
+                        System.out.println(
+                                "Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
                     } else if ((random > POPULATION_TRIANGLE_CHANCE) && (random <= SLEEP_CHANCE)) {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
                     } else if ((random > SLEEP_CHANCE) && (random <= BRAINWASHING_CHANCE)) {
-                        System.out.println("The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
+                        System.out.println(
+                                "The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
                     } else if ((random > BRAINWASHING_CHANCE) && (random <= FORUMS_CHANCE)) {
                         System.out.println("I spennd my time on online forums where poeple buy guns and stuff!!");
                     } else if ((random > FORUMS_CHANCE) && (random <= POWER_CHANCE)) {
                         System.out.println("I love power!! Being able to lock studentz comupters feelz awwsome :D");
                     } else if ((random > POWER_CHANCE) && (random <= BUS_CHANCE)) {
-                        System.out.println("If u code on your phone on da bus, you can getz boyfriend or girlfried! Bcuz they will think u soooo cool!!!");
+                        System.out.println(
+                                "If u code on your phone on da bus, you can getz boyfriend or girlfried! Bcuz they will think u soooo cool!!!");
                     } else if ((random > BUS_CHANCE) && (random <= SOCIETY_CHANCE)) {
                         society();
                     } else {
@@ -61,23 +65,24 @@ public class Main {
             }
         }
     }
-    
+
     public static void twoBanana() {
         System.out.println("Two banana.");
     }
-    
+
     public static void oneBanana() {
         Scanner keyboard = new Scanner(System.in);
-        
+
         System.out.println("\nOne banana.");
-        
+
         while (true) {
             String input = keyboard.nextLine().toLowerCase().trim();
             if (input.contains("two banana") || input.contains("two banana.") || input.contains("two banana!")) {
                 System.out.println("One pound!!1!\n");
                 break;
             } else {
-                System.out.println("One banana. I won't sttop until you anwser me properlly. I am goign to keep bothernig u with this.");
+                System.out.println(
+                        "One banana. I won't sttop until you anwser me properlly. I am goign to keep bothernig u with this.");
             }
         }
     }
@@ -86,19 +91,19 @@ public class Main {
         OpenAvatar openAvatar = new OpenAvatar();
         openAvatar.main(null);
     }
-    
+
     public static void selfie() {
         SendSelfie sendSelfie = new SendSelfie();
         sendSelfie.main(null);
     }
-    
+
     public static void transformers() {
         Scanner keyboard = new Scanner(System.in);
-        
+
         System.out.println("Chooose between pokemon andd transformers.");
-        
+
         String input = keyboard.nextLine().toLowerCase().trim();
-        
+
         if (input.contains("pokemon") && !input.contains("transformers")) {
             System.out.println("This iis what's wrong with society.");
         } else {
@@ -110,7 +115,7 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("What is at the core of a functioning society?!?");
-        
+
         String input = keyboard.nextLine().toLowerCase().trim();
 
         if (input.contains("violence")) {

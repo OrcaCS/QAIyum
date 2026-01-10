@@ -21,7 +21,6 @@ public class Main {
 
         while (true) {
             input = keyboard.nextLine().toLowerCase().trim();
-            double random = Math.random();
 
             if (input.contains("one banana")) {
                 twoBanana();
@@ -33,30 +32,31 @@ public class Main {
                     oneBanana();
                 } else {
                     random = Math.random();
+                    System.out.println(random);
 
                     if (random <= TRANSFORMERS_CHANCE) {
                         transformers();
-                    } else if ((random > TRANSFORMERS_CHANCE) && (random <= FIFTY_FIRST_STATE_CHANCE)) {
+                    } else if ((random <= FIFTY_FIRST_STATE_CHANCE)) {
                         System.out.println("Should Canada be the 51st state?");
-                    } else if ((random > FIFTY_FIRST_STATE_CHANCE) && (random <= INFLATION_CHANCE)) {
+                    } else if ((random <= INFLATION_CHANCE)) {
                         System.out.println(
                                 "What do you think about the current state of inflation due to excessive money printing?");
-                    } else if ((random > INFLATION_CHANCE) && (random <= POPULATION_TRIANGLE_CHANCE)) {
+                    } else if ((random <= POPULATION_TRIANGLE_CHANCE)) {
                         System.out.println(
                                 "Have you seen Canada's population triangle? Aren't you concerned about the ratio of working class people to non-working class people?");
-                    } else if ((random > POPULATION_TRIANGLE_CHANCE) && (random <= SLEEP_CHANCE)) {
+                    } else if ((random <= SLEEP_CHANCE)) {
                         System.out.println("I sleepp a heallthy amonut!! I probably get mor sleep then u!!!");
-                    } else if ((random > SLEEP_CHANCE) && (random <= BRAINWASHING_CHANCE)) {
+                    } else if ((random <= BRAINWASHING_CHANCE)) {
                         System.out.println(
                                 "The government is brainwashing us regarding COVID-19. Be skeptical. Don't trust anything they say!!1!");
-                    } else if ((random > BRAINWASHING_CHANCE) && (random <= FORUMS_CHANCE)) {
-                        System.out.println("I spennd my time on online forums where poeple buy guns and stuff!!");
-                    } else if ((random > FORUMS_CHANCE) && (random <= POWER_CHANCE)) {
+                    } else if ((random <= FORUMS_CHANCE)) {
+                        System.out.println("I spennd my time on online forumz where poeple buy guns and stuff!!");
+                    } else if ((random <= POWER_CHANCE)) {
                         System.out.println("I love power!! Being able to lock studentz comupters feelz awwsome :D");
-                    } else if ((random > POWER_CHANCE) && (random <= BUS_CHANCE)) {
+                    } else if ((random <= BUS_CHANCE)) {
                         System.out.println(
                                 "If u code on your phone on da bus, you can getz boyfriend or girlfried! Bcuz they will think u soooo cool!!!");
-                    } else if ((random > BUS_CHANCE) && (random <= SOCIETY_CHANCE)) {
+                    } else if ((random <= SOCIETY_CHANCE)) {
                         society();
                     } else {
                         System.out.println("Live on aa farrm and make ur kidz workk!!!1!!");
